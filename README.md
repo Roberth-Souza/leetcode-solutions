@@ -12,12 +12,15 @@ Nothing fancy here: it is a study log. Each file is the solution I wrote for a p
 
 ## Layout
 
-One file per problem, named after the problem number and slug:
+One file per problem, named after the problem number and slug, grouped by difficulty:
 
 ```
-1.two-sum.py
-9.palindrome-number.py
-217.contains-duplicate.py
+easy/
+  1.two-sum.py
+  9.palindrome-number.py
+  217.contains-duplicate.py
+medium/
+hard/
 ```
 
 ## Stack
