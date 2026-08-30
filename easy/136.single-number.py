@@ -17,9 +17,24 @@ class Solution:
         for k, v in hash.items():
             if v == 1:
                 return k
+        
+ ---------------------------
+
+        a solution where we add a element to a set if it's the first time we see him
+        else we remove him from the set:
+
+        seen = set()
+        for e in nums:
+            if e in seen:
+                seen.remove(e)
+            else:
+                seen.add(e)
+        return seen.pop()   # only one left
 
         O(n)/O(n) time complexity
+        O(n) space complexity
 
+-------------------------------
         solved as this before knowing bit manipulation
         it got accepted but not with good time complexity
         i will search bit manipulation now.
@@ -30,7 +45,7 @@ class Solution:
             a ^= e
         return a
 
-        # I think the explanation for this deserves it's on file
+        # This is o(1) space complexity !!!
 
 
 # @leet end
